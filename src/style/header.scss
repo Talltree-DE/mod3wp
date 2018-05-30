@@ -1,0 +1,33 @@
+#header {
+    display: grid;
+    grid-template-columns: 150px 350px auto;
+    grid-column-gap: 15px;
+    position: relative;
+
+}
+
+#header__logo {
+    // min-width: 200px;
+    position: relative;
+    order: 1
+}
+
+#header__headline {
+    // min-width: 200px;
+    position: relative;
+    order: 2
+}
+
+#headline__h1 {
+    font-weight: bold;
+    color: #6666cc;
+    font-size: 1.8em;
+    white-space: nowrap;
+}
+#headline__h2 {
+    font-weight: bold;
+    color: #bababa;
+    font-size: 0.96em;
+    white-space: nowrap;
+
+}
