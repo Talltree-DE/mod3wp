@@ -1,37 +1,77 @@
 @import 'normalize';
 @include normalize();
+@import 'variables';
 @import 'header';
 
-$grid-max-width: 1280px;
-$background-color: #fffffffd;
-$font-color: rgb(17, 17, 17);
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font;
     color: $font-color;
 }
 
 #wrapper {
     margin-right: auto;
-    margin-left:  auto; 
+    margin-left: auto;
     background-color: $background-color;
     max-width: $grid-max-width;
+}
+
+.content__seperator {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(90, 90, 90);
+    margin: 1em 1em;
+    padding: 0;
+}
+
+
+
+.content__headline {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.content__sub-headline {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
 }
 
 #content01 {
     margin-top: 20px;
 }
 
+#content05 > div.content__text {
+    height: 200px;
+}
 p {
     padding: 10px;
     margin-top: 0;
 }
 
-#content01__text {
+.content__picture {
+    display: block;
+    margin: auto;
+}
+
+.picture__subtext {
+    text-align: left;
+    font-size: 10pt;
+    padding-top: 5px; 
+}
+
+.content__text {
     text-align: justify;
     padding: 15px;
-    columns: 12em 3;
+    columns: 320px 3;
     column-rule-style: solid;
     column-rule-width: 1px;
     column-rule-color: grey;
+
+    ul{
+        list-style: none;
+        padding-left: 10px;
+        margin-top: 10px; 
+    }
 }
